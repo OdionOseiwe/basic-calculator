@@ -60,11 +60,15 @@
 
     }
 
-    &__logo{
-      
-       height: 20rem;
-       width: 20rem;
-      
+    &__jamb{
+      font-size: 6rem;
+      color: #000;
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+      background-color: $color-main;
+      text-align: center;
+      padding-top: 4rem;
 
         @media only screen and (max-width:$bp-largest) {
             display: none;

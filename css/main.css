@@ -94,11 +94,17 @@ body {
     @media only screen and (max-width: 56.25em) {
       .head__result {
         height: 7rem; } }
-  .head__logo {
+  .head__jamb {
+    font-size: 6rem;
+    color: #000;
     height: 20rem;
-    width: 20rem; }
+    width: 20rem;
+    border-radius: 50%;
+    background-color: #4b3d8f;
+    text-align: center;
+    padding-top: 4rem; }
     @media only screen and (max-width: 75em) {
-      .head__logo {
+      .head__jamb {
         display: none; } }
 
 .dot {
