@@ -1,0 +1,72 @@
+.btns{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(4,1fr);
+    background-color: $color-main;
+    grid-gap: 5px;
+    @media only screen and (max-width:$bp-large) {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+
+    @media only screen and (max-width:$bp-medium) {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(6,1fr);
+    }
+
+}
+
+button{
+    background-color: $color-sec;
+    transition:  transform .2s;
+    transition: all .2s;
+    outline: none;
+    font-size: 2.5rem;
+    font-weight: 600;
+    border: 3px solid $color-sec;
+
+    @media only screen and (max-width:$bp-large) {
+       font-size: 3rem;  
+    }
+}
+
+button:hover,
+button:active{
+    background-color: $color-primary;
+    color: blue; 
+}
+
+.off{
+    grid-column: 8/9;
+    grid-row: 3/5;
+    @media only screen and (max-width:$bp-large) {
+        grid-column: 6/7;
+        grid-row: 5/6;  
+    }
+
+    @media only screen and (max-width:$bp-medium) {
+        grid-row: 6/7;
+        grid-column: 5/6;
+    }
+}
+
+.del{
+    grid-column: 6/8;
+    grid-row: 4/5;
+    @media only screen and (max-width:$bp-large) {
+        grid-column: 6/7;
+        grid-row: 4/5;  
+    }
+    
+    @media only screen and (max-width:$bp-medium) {
+        grid-row: 4/5;
+        grid-column: 4/5;
+     }
+}
+
+.equal{
+    grid-row: 3/5;
+    grid-column: 5/6;  
+}
